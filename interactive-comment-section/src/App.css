@@ -1,0 +1,151 @@
+#root {
+  max-width: 1440px;
+  font-size: 16px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  padding: 1rem;
+  /* text-align: center; */
+}
+body {
+  background-color: hsl(228, 33%, 97%);
+}
+
+image,
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.content-profile {
+  width: 10%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.comment {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  /* width: 100%; */
+  margin-bottom: 2em;
+  padding: 1em 1.5em;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  border-radius: 2%;
+}
+
+.content-head {
+  display: flex;
+  column-gap: 0.5em;
+}
+.you-badge {
+  height: 70%; /* kam nemishe*/
+  background-color: hsl(238, 40%, 52%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 8%;
+  font-size: 0.75rem;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+}
+.content-content {
+  margin-block: 1em;
+}
+.content-interactions {
+  display: flex;
+  align-items: center;
+}
+.content-score {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0.5em;
+  background-color: hsl(228, 33%, 97%);
+  border-radius: 8%;
+  margin-right: auto;
+}
+.content-score > img {
+  width: 20%;
+}
+
+.content-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5em;
+  cursor: pointer;
+  background-color: transparent;
+}
+.score,
+.content-mention,
+.reply-btn-txt,
+.edit-btn-txt {
+  color: hsl(238, 40%, 52%);
+}
+.del-btn-txt {
+  color: hsl(358, 79%, 66%);
+}
+.content-username {
+  color: hsl(212, 24%, 26%);
+}
+.comment-replies {
+  width: 85%; /* width and padding is the same as Content element */
+  padding: 1em 1.5em;
+  /* padding-right: 0; */
+  /* padding-left: 3em; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-left: 2px ridge hsl(228, 33%, 97%);
+  /* padding: 0;
+  padding-bottom: 0; */
+}
+.comment-replies > .content {
+  width: 80%;
+  margin-left: auto;
+}
+
+/* reply section */
+.reply-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reply-section > img {
+  width: 12%;
+}
+.form-reply {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .comment {
+    max-width: 50%;
+  }
+  .comment-replies {
+    align-self: flex-end;
+    padding-right: 0;
+  }
+}
+
+/* .logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+} */
